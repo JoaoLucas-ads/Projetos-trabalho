@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    float av1, av2, med;
+    
+    printf("Digite a nota da AV1 do aluno: \n");
+    scanf("%f", &av1);
+    
+    printf("Digite a nota da AV2 do aluno: \n");
+    scanf("%f", &av2);
+    
+    med = (av1 + av2) / 2;
+    
+    if (med >= 6)
+        printf("\nAluno aprovado com média %.2f\n", med);
+    else if (med >= 4)
+        printf("\nAluno em exame final com média %.2f\n", med);
+    else
+        printf("O aluno está reprovado com média %.2f\n", med);
+
+    return 0;
+}
+
+
